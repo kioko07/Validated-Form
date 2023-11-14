@@ -1,0 +1,31 @@
+const mess = document.getElementById('fname')
+const mass = document.getElementById('lname')
+const password = document.getElementById('password')
+const form = document.querySelector('.form')
+const error = document.querySelector('.error')
+
+form.addEventListener('submit', (e)=>{
+  let messages = []
+  if (mess.value === '' || mess.value == null){
+    messages.push('Please fill all spaces')
+   }
+    if (mass.value === '' || mass.value == null){
+      messages.push('Please fill all spaces')
+    }
+  
+    if (password.value.length <= 6){
+        messages.push('Password must be longer 6 characters')
+    }
+    if (password.value.length >=15 ){
+      messages.push('Password must be less than 15 characters')
+  }
+
+    if(password.value ==='password'){
+      messages.push('Password cannot be password')
+    }
+  if(messages.length > 0) {
+    e.preventDefault()
+    error.innerText = messages.join(', ')
+  }
+  
+})

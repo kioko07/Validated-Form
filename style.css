@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "poppins" sans-serif;
+  box-sizing: border-box;
+  font-size: 18PX;
+}
+.error{
+  color: red;
+}
+.form{
+  width: 300px;
+  border-radius: 10px;
+  height: 400px;
+  background-color: bisque;
+  box-shadow: 10px 10px 10px 10px rgb(99, 99, 25) ;
+  margin: 20vh 90vh;
+  padding: 20px;
+  overflow: auto;
+}
+input, button{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  font-size: 12px;
+}
+h1{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+button:hover{
+color: rgb(156, 17, 17);
+background-color: grey;
+border-radius: 10px;
+}
+button{
+  font-size: 20px;
+}
